@@ -8,42 +8,59 @@
 </head>
     <body>
         <header>
-            <h1>Netuno</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">O Projeto</a></li>
-                    <li><a href="#">O Problema</a></li>
-                    <li><a href="#">Sua Jornada</a></li>
-                    <li><a href="#">Objetivos</a></li>
-                </ul>
-            </nav>
-            <hr>
+            <div class="header-container">
+                <h1 class="logo">Netuno</h1>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#projeto">O Projeto</a></li>
+                        <li><a href="#problemas">O Problema</a></li>
+                        <li><a href="#objetivos">Sua Jornada</a></li>
+                        <li><a href="#objetivos">Objetivos</a></li>
+                        <li class="botao1"><a href="#">Processos Seletivos</a></li>
+                    </ul>
+                    </nav>
+                <hr>
         </header>
         <main>
             <section id="form-section">
                 <h1>Formulário de Cadastro</h1>
                 <form>
-                    <label for="name">Nome:</label>
+                    <label for="name">Nome Completo:</label>
                     <input type="text" id="name" name="name">
-                    <label for="email">Email:</label>
+                    <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email">
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password">
                     <div>
-                        <input type="checkbox" id="terms" name="terms">
-                        <label for="terms">Aceito os Termos de Uso</label>
+                        <input type="checkbox" id="php" name="course" value="PHP">
+                        <label for="php">PHP</label>
+                        <input type="checkbox" id="java" name="course" value="Java">
+                        <label for="java">Java</label>
+                        <input type="checkbox" id="ruby" name="course" value="Ruby">
+                        <label for="ruby">Ruby</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="privacy" name="privacy">
-                        <label for="privacy">Aceito a Política de Privacidade</label>
+                        <input type="radio" id="beginner" name="level" value="Iniciante">
+                        <label for="beginner">Iniciante</label>
+                        <input type="radio" id="intermediate" name="level" value="Intermediário">
+                        <label for="intermediate">Intermediário</label>
+                        <input type="radio" id="advanced" name="level" value="Avançado">
+                        <label for="advanced">Avançado</label>
                     </div>
                     <button type="submit">Enviar</button>
                 </form>
             </section>
         </main>
         <footer>
-            <p>© 2024 Netuno. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Netuno. Todos os direitos reservados.</p>
         </footer>
+
+            <script>
+                document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Formulário enviado!');
+        });
+
+            </script>
+        
     </body>
  </html>
     
