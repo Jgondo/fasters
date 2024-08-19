@@ -7,10 +7,13 @@
     <title>teste</title>
 </head>
 <body>
-    <header>
-        <h1 class="logo">netuno</h1>
+     <!-- Cabeçalho -->
+     <header>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo Netuno">
+        </div>
         <nav>
-            <ul class="nav-menu">
+            <ul>
                 <li><a href="#">O Projeto</a></li>
                 <li><a href="#">O Problema</a></li>
                 <li><a href="#">Sua Jornada</a></li>
@@ -20,122 +23,60 @@
         </nav>
     </header>
 
-    <hr class="transparent-border">
-        <div class="text-vertical">
-            GERANDO DIAMANTES
-        </div>
+    <!-- Seção Principal -->
+    <div class="main-container">
+        
+        <img src="imagens/bannertopog.png" alt="Imagem">
+        <div class="form-container">
+            <h2>Formulário de Cadastro</h2>
+            <form>
+                <label for="name">Nome Completo*</label>
+                <input type="text" id="name" placeholder="Seu nome">
 
-        <!-- Seção Principal: Imagem e Formulário -->
-        <div class="container">
-            <div class="image-section">
-                <img src="/mnt/data/image.png" alt="Imagem de Cadastro">
-                <div class="text-vertical">
-                    <span class="gerando-diamantes">GERANDO</span><br>
-                    <span class="diamantes">DIAMANTES</span>
-                </div>
-            </div>
-    
-            <div class="form-section">
-                <form class="form-card">
-                    <h2>Formulário de Cadastro</h2>
-                    <p>Preencha seus dados</p>
-    
-                    <label for="name">Nome completo*</label>
-                    <input type="text" id="name" name="name" placeholder="Seu nome">
-    
-                    <label for="email">E-mail*</label>
-                    <input type="email" id="email" name="email" placeholder="Seu e-mail">
-    
-                    <label for="state">Estado*</label>
-                    <select id="state" name="state">
-                        <option value="">Selecione o seu estado</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-    
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" placeholder="Seu e-mail">
+
+                <label for="estado">Estado*</label>
+                <select id="estado">
+                    <option value="">Selecione o estado</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <!-- Adicione mais estados aqui -->
+                </select>
+
+                <div class="programming-skills">
                     <p>Conhecimento de Programação*</p>
-                    <div class="programming-skills">
-                        <input type="checkbox" id="html" name="skills" value="HTML">
-                        <label for="html">HTML</label>
-    
-                        <input type="checkbox" id="css" name="skills" value="CSS">
-                        <label for="css">CSS</label>
-    
-                        <input type="checkbox" id="javascript" name="skills" value="JavaScript">
-                        <label for="javascript">JavaScript</label>
-    
-                        <input type="checkbox" id="php" name="skills" value="PHP">
-                        <label for="php">PHP</label>
-    
-                        <input type="checkbox" id="net" name="skills" value=".NET">
-                        <label for="net">.NET</label>
-    
-                        <input type="checkbox" id="node" name="skills" value="Node.js">
-                        <label for="node">Node.js</label>
-    
-                        <input type="checkbox" id="python" name="skills" value="Python">
-                        <label for="python">Python</label>
-    
-                        <input type="checkbox" id="flutter" name="skills" value="Flutter">
-                        <label for="flutter">Flutter</label>
-    
-                        <input type="checkbox" id="outros" name="skills" value="Outros">
-                        <label for="outros">Outros</label>
+                    <div class="skills-options">
+                        <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                        <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                        <label><input type="checkbox" name="skills" value="JS"> JavaScript</label>
+                        <label><input type="checkbox" name="skills" value="PHP"> PHP</label>
+                        <label><input type="checkbox" name="skills" value=".NET"> .NET</label>
+                        <!-- Adicione mais opções aqui -->
                     </div>
-    
+                </div>
+
+                <div class="development-radio">
                     <p>Já trabalhou com desenvolvimento?</p>
-                    <input type="radio" id="sim" name="development" value="Sim">
-                    <label for="sim">Sim</label>
-                    <input type="radio" id="nao" name="development" value="Não">
-                    <label for="nao">Não</label>
-    
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
+                    <label><input type="radio" name="dev" value="Sim"> Sim</label>
+                    <label><input type="radio" name="dev" value="Não"> Não</label>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-    
-        <!-- Seção Inferior: O Projeto -->
-        <div class="bottom-section">
-            <img src="imagens/dev.png" alt="Imagem do Projeto">
-            <div class="bottom-text">
-                <h2>O Projeto</h2>
-                <p>
-                    Com o "novo normal" causado pela pandemia dos últimos anos, as empresas no mercado estão
-                    mais abertas ao digital, isso inclui o emprego Home Office. As necessidades de profissionais na
-                    Indústria de Tecnologia da Informação, bem como o uso de práticas ágeis, têm um alto índice de
-                    crescimento no país, integrando para trabalhos em áreas de desenvolvimento.
-                </p>
-                <p>
-                    O projeto Netuno, iniciado pela Plataforma Flutter, tem por objetivo estruturar e educar pessoas
-                    com treinamento voltado para áreas de tecnologia, bem como promover oportunidades de carreira
-                    para novos profissionais.
-                </p>
-            </div>
+    </div>
+
+    <!-- Seção Inferior -->
+    <div class="bottom-section">
+        <img src="imagens/dev.png" alt="Imagem do Projeto">
+        <div class="bottom-text">
+            <h2>O Projeto</h2>
+            <p>Com o "novo normal" causado pela pandemia, as dinâmicas de trabalho mudaram...</p>
+            <p>O projeto Netuno foi desenvolvido para capacitar novas gerações de desenvolvedores.</p>
         </div>
+    </div>
 </body>
 </html>

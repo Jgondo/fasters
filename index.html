@@ -6,61 +6,104 @@
     <link rel="stylesheet" href="styles.css">
     <title>Desafio Netumo Pages</title>
 </head>
-    <body>
-        <header>
-            <div class="header-container">
-                <h1 class="logo">Netuno</h1>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="#projeto">O Projeto</a></li>
-                        <li><a href="#problemas">O Problema</a></li>
-                        <li><a href="#objetivos">Sua Jornada</a></li>
-                        <li><a href="#objetivos">Objetivos</a></li>
-                        <li class="botao1"><a href="#">Processos Seletivos</a></li>
-                    </ul>
-                    </nav>
-                <hr>
-        </header>
-        <main>
-            <section id="form-section">
-                <h1>Formulário de Cadastro</h1>
-                <form>
-                    <label for="name">Nome Completo:</label>
-                    <input type="text" id="name" name="name">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email">
-                    <div>
-                        <input type="checkbox" id="php" name="course" value="PHP">
-                        <label for="php">PHP</label>
-                        <input type="checkbox" id="java" name="course" value="Java">
-                        <label for="java">Java</label>
-                        <input type="checkbox" id="ruby" name="course" value="Ruby">
-                        <label for="ruby">Ruby</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="beginner" name="level" value="Iniciante">
-                        <label for="beginner">Iniciante</label>
-                        <input type="radio" id="intermediate" name="level" value="Intermediário">
-                        <label for="intermediate">Intermediário</label>
-                        <input type="radio" id="advanced" name="level" value="Avançado">
-                        <label for="advanced">Avançado</label>
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 Netuno. Todos os direitos reservados.</p>
-        </footer>
+<header>
+    <div class="logo">
+        <img src="imagens/logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">O Projeto</a></li>
+            <li><a href="#">O Problema</a></li>
+            <li><a href="#">Sua Jornada</a></li>
+            <li><a href="#">Objetivos</a></li>
+            <li><a href="#" class="button">Processo Seletivo</a></li>
+        </ul>
+    </nav>
+</header>
 
-            <script>
-                document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Formulário enviado!');
-        });
+<!-- Conteúdo Principal -->
+<div class="main-container">
+    
+    <img src="imagens/bannertopog.png" alt="Imagem de Cadastro">
+    <div class="form-container">
+        <h2>Formulário de Cadastro</h2>
+        <form>
+            
+            <input type="text" id="name" placeholder="Nome completo">
 
-            </script>
-        
+            <input type="email" id="email" placeholder="E-mail">
+
+            <select id="state" name="state">
+                    <option value="">Estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+            </select>
+                <!-- Lista de estados brasileiros -->
+            
+
+            <div class="programming-skills">
+                <p>Conhecimento de Programação*</p>
+                <div class="skills-options">
+                    <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                    <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                    <label><input type="checkbox" name="skills" value="JS"> JavaScript</label>
+                    <label><input type="checkbox" name="skills" value="PHP"> PHP</label>
+                    <label><input type="checkbox" name="skills" value=".NET"> .NET</label>
+                    <label><input type="checkbox" name="skills" value="VBA"> VBA</label>
+                    <label><input type="checkbox" name="skills" value="React"> React</label>
+                    <label><input type="checkbox" name="skills" value="ReactNative"> React Native</label>
+                    <label><input type="checkbox" name="skills" value="Node"> Node</label>
+                    <label><input type="checkbox" name="skills" value="Flutter"> Flutter</label>
+                    <label><input type="checkbox" name="skills" value="Outros"> Outros</label>
+                </div>
+            </div>
+
+            <div class="development-radio">
+                <p>Já trabalhou com desenvolvimento?</p>
+                <label><input type="radio" name="dev" value="Sim"> Sim</label>
+                <label><input type="radio" name="dev" value="Não"> Não</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Seção Inferior -->
+<div class="bottom-section">
+    <img src="imagens/dev.png" alt="Imagem Projeto">
+    <div class="bottom-text">
+        <h2>O Projeto</h2>
+        <p>Com o "novo normal" causado pela pandemia...</p>
+        <p>O projeto Netuno, iniciado pela Plataforma Flutter...</p>
+    </div>
+</div>
+
     </body>
  </html>
     
