@@ -78,7 +78,13 @@ nav ul li a.button {
 h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #333;
+    color: #33333346;
+}
+
+p {
+    padding: 10px;
+    font-weight: bold;
+    color: #005a8d;
 }
 
 label {
@@ -95,6 +101,7 @@ select {
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    color: #555;
 }
 
 .programming-skills {
@@ -104,17 +111,34 @@ select {
 .programming-skills p {
     margin-bottom: 10px;
     font-weight: bold;
+    color: white;
+    background-color: #005a8d;
 }
 
 .skills-options {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    background-color: #005a8d;
+    color: white;  
+}
+
+label.options {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
 }
 
 .development-radio p {
     margin-bottom: 10px;
     font-weight: bold;
+    
+}
+
+.development-radio label {
+    display: inline-block;
+    padding: 10px;
+    
 }
 
 button {
