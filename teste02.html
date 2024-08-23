@@ -22,20 +22,17 @@
         </nav>
     </header>
 
-<!-- Seção Principal -->
+    <!-- Seção Principal -->
     <div class="main-container">
-        
-        <img src="imagens/bannertop800.png" alt="Imagem">
-<!-- Cadastro --> 
+        <div class="image-container">
+            <img src="imagens/bannertopog.png" alt="Imagem">
+        </div>
         <div class="form-container">
-            <h2>Formulário de Cadastro</h2> 
+            <h2>Formulário de Cadastro</h2>
             <p>Preencha seus dados</p>
             <form>
-
                 <input type="text" id="name" placeholder="Nome completo">
-               
                 <input type="email" id="email" placeholder="E-mail">
-            
                 <select id="estado">
                     <option value="">Estado</option>
                     <option value="AC">Acre</option>
@@ -66,25 +63,53 @@
                     <option value="SE">Sergipe</option>
                     <option value="TO">Tocantins</option>
                 </select>
+            </form>
+        </div>
+    </div>
+</body>
  <!-- Habilidades -->   
+    <div class="programming-skills">
+        <p>Conhecimento de Programação*</p>
+        <div class="skills-options">
+            <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+            <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+            <label><input type="checkbox" name="skills" value="JS"> JavaScript</label>
+            <label><input type="checkbox" name="skills" value="PHP"> PHP</label>
+            <label><input type="checkbox" name="skills" value=".NET"> .NET</label>
+            <label><input type="checkbox" name="skills" value="VBA"> VBA</label>
+            <label><input type="checkbox" name="skills" value="React"> React</label>
+            <label><input type="checkbox" name="skills" value="ReactNative"> React Native</label>
+            <label><input type="checkbox" name="skills" value="Node"> Node</label>
+            <label><input type="checkbox" name="skills" value="Flutter"> Flutter</label>
+            <label><input type="checkbox" name="skills" value="Outros"> Outros</label>
+        </div>
+    </div>
 
+    <div class="development-radio">
+        <p>Já trabalhou com desenvolvimento?</p>
+        <label><input type="radio" name="dev" value="Sim"> Sim</label>
+        <label><input type="radio" name="dev" value="Não"> Não</label>
+    </div>
 
-
-
+    <button type="submit">Enviar</button>
+    </form>
+    </div>
+    </div>
 
 
 <!-- O projeto -->
-        <div class="bottom-section">
-            <img src="imagens/dev.png" alt="Imagem Projeto">
-            <div class="bottom-text">
-                <h2>O Projeto</h2>
-                <p>Com o "novo normal" causado pela pandemia...</p>
-                <p>O projeto Netuno, iniciado pela Plataforma Flutter...</p>
-            </div>
-        </div>
+<div class="bottom-section">
+    <img src="imagens/dev.png" alt="Imagem Projeto">
+    <div class="bottom-text">
+        <h2>O Projeto</h2>
+        <p>Com o "novo normal" causado pela pandemia...</p>
+        <p>O projeto Netuno, iniciado pela Plataforma Flutter...</p>
+    </div>
+</div>
+
 <!-- O problema -->
 <div class="problema-section">
-    <img src="imagens/Container2.png" alt="Imagem">
+    <img src="imagens/Container500.png" alt="Imagem">
     <div class="problema-content">
         <div class="problema-text">
             <h2>O Problema</h2>
@@ -96,14 +121,15 @@
     </div>
 </div>
 
+<!-- Oportunidades -->
 <div class="oportunidades-section">
     <div class="oportunidade-box">
         <h3>Oportunidade</h3>
-        <p>Acreditamos que a combinação de interesses, dedicação e oportunidades pode causar um grande impacto nas pessoas, nas organizações e no mundo.</p>
+        <p>Acreditamos que a combinação de interesse, dedicação e oportunidade pode causar um grande impacto nas pessoas, nas organizações e no mundo.</p>
     </div>
     <div class="oportunidade-box">
         <h3>Comunidade</h3>
-        <p>Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de forma mais rápida, fluída e eficiente.</p>
+        <p>Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de forma mais rápida, fluida e eficiente.</p>
     </div>
     <div class="oportunidade-box">
         <h3>Experiência Real</h3>
@@ -115,36 +141,38 @@
     <h2>Sua Jornada</h2>
     <div class="jornada-boxes">
         <div class="jornada-box">
-            <img src="icone1.png" alt="Ícone 1">
+            <img src="imagens/calendario.png" alt="Ícone 1">
             <p>Programas de 4 meses de duração, sendo 2 horas/dia.</p>
         </div>
         <div class="jornada-box">
-            <img src="icone2.png" alt="Ícone 2">
+            <img src="imagens/medalha.png" alt="Ícone 2">
             <p>Do Zero ao Junior Promissor em 4 meses.</p>
         </div>
         <div class="jornada-box">
-            <img src="icone3.png" alt="Ícone 3">
+            <img src="imagens/relogio.png" alt="Ícone 3">
             <p>640 horas de aplicação prática dos conceitos.</p>
         </div>
         <div class="jornada-box">
-            <img src="icone4.png" alt="Ícone 4">
+            <img src="imagens/home.png" alt="Ícone 4">
             <p>Mentoria individual e coletiva em pares/ágil.</p>
         </div>
         <div class="jornada-box">
-            <img src="icone5.png" alt="Ícone 5">
+            <img src="imagens/group.png" alt="Ícone 5">
             <p>100% Home Office com plataformas de cursos online.</p>
         </div>
         <div class="jornada-box">
-            <img src="icone6.png" alt="Ícone 6">
+            <img src="imagens/target.png" alt="Ícone 6">
             <p>Variedade de áreas dentro da tecnologia.</p>
         </div>
     </div>
     <div class="cta-container">
         <button class="cta-button">Quero me cadastrar para o Processo Seletivo</button>
-        <div class="cta-line"></div>
+        <br>
+        <img src="imagens/Vector1.png" alt="">
     </div>
 </div>
 
+<!-- Objetivo -->
 <div class="objetivos-section">
     <h2>Objetivos</h2>
     <div class="objetivo-box">
@@ -160,8 +188,6 @@
         <p>Criar oportunidades brilhantes para profissionais que se destacam e estão prontos para assumir desafios maiores.</p>
     </div>
 </div>
-<!-- Objetivo -->
-
 
 <!-- Rodapé -->
     <footer>

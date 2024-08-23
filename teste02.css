@@ -2,6 +2,9 @@
 
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
 }
 
 * {
@@ -24,6 +27,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    position: relative;
+    overflow: hidden;
 }
 
 .logo img {
@@ -52,10 +57,113 @@ nav ul li a.button {
     border-radius: 5px;
 }
 
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 4px; /* Ajuste a altura da linha conforme necessário */
+    background: linear-gradient(to right, transparent, white, transparent);
+}
+
+/* Seção Principal */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Espaçamento entre imagem e formulário */
+}
+
+.image-container {
+    flex: 1;
+    max-width: 1000px; /* Define um tamanho máximo para a imagem */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 400px; /* Define um tamanho máximo para o formulário */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.411);
+}
+
+.form-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container input, 
+.form-container select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
 
+.programming-skills {
+    margin-bottom: 15px;
+}
 
-/* Seção Inferior */
+.programming-skills label {
+    margin-right: 10px;
+}
+
+.skills-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-options label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.development-radio {
+    margin-bottom: 20px;
+}
+
+.development-radio label {
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0079BF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005a8d;
+}
+
+
+/* Seção "O projeto" */
 .bottom-section {
     display: flex;
     align-items: center;
@@ -70,22 +178,35 @@ nav ul li a.button {
     margin-right: 50px;
 }
 
+.bottom-text {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .bottom-text h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    color: #007bff;
 }
 
 .bottom-text p {
     font-size: 18px;
+    color: #333;
     line-height: 1.6;
 }
 
-/* Problema */
+/* Seção "O Problema" */
 .problema-section {
-    padding: 50px;
-    background-color: #0079BF;
-    color: #0e8bd3;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.problema-section img {
+    width: 40%;
+    margin-right: 50px;
 }
 
 .problema-text {
@@ -100,8 +221,8 @@ nav ul li a.button {
 
 .problema-text hr {
     width: 50px;
-    border: 2px solid #007bff;
-    margin: 20px auto;
+    border: 2px solid #0079BF;
+    margin: 20px 0;
 }
 
 .problema-text p {
@@ -110,19 +231,19 @@ nav ul li a.button {
     line-height: 1.6;
 }
 
-/* Estilos para a seção "Oportunidades" */
+/* Seção "Oportunidades" */
 .oportunidades-section {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-bottom: 2px solid #ccc;
 }
 
 .oportunidade-box {
     flex: 1;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin-right: 10px;
     border-radius: 8px;
@@ -131,7 +252,7 @@ nav ul li a.button {
 
 .oportunidade-box h3 {
     font-size: 24px;
-    color: #333;
+    color: #007bff;
     margin-bottom: 15px;
 }
 
@@ -147,8 +268,8 @@ nav ul li a.button {
 /* Estilos para a seção "Sua Jornada" */
 .jornada-section {
     padding: 50px;
-    background: linear-gradient(180deg, #1c1c1c, #555);
-    color: #fff;
+    background-color: white;
+    color: #0079BF;
     text-align: center;
 }
 
@@ -167,15 +288,19 @@ nav ul li a.button {
     flex: 1;
     padding: 20px;
     margin: 10px;
-    background-color: #007bff;
+    background-color: #0079BF;
     border-radius: 8px;
-    color: #fff;
+    color: white;
     text-align: center;
 }
 
 .jornada-box img {
     max-width: 40px;
     margin-bottom: 10px;
+    background-color: white;
+    padding: 2px 2px;
+    margin: 2px 2px;
+    border-radius: 5px;
 }
 
 .cta-container {
@@ -193,18 +318,11 @@ nav ul li a.button {
     margin-bottom: 20px;
 }
 
-.cta-line {
-    width: 100px;
-    height: 5px;
-    background-color: #007bff;
-    margin: 0 auto;
-    border-radius: 2.5px;
-}
 
 /* Estilos para a seção "Objetivos" */
 .objetivos-section {
     padding: 50px;
-    background-color: #007bff;
+    background-color:#0079BF;
     text-align: center;
     color: #fff;
 }
@@ -219,7 +337,7 @@ nav ul li a.button {
     width: 30%;
     padding: 20px;
     background-color: #fff;
-    color: #007bff;
+    color: black;
     margin: 10px;
     border-radius: 8px;
     text-align: center;
