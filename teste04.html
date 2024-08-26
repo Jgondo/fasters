@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test nave</title>
+    <link rel="stylesheet" href="estilos/teste04.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">
+            <h1>netuno</h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="#">O Projeto</a>
+            <a href="#">O Problema</a>
+            <a href="#">Sua Jornada</a>
+            <a href="#">Objetivos</a>
+            <a href="#" class="btn-seletivo">Processo Seletivo</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <div class="image-section">
+            <img src="https://via.placeholder.com/300x400" alt="Casal sorrindo, rapaz de camisa verde e moça de blusa azul com laptop">
+        </div>
+
+        <!-- Formulário de Cadastro -->
+        <div class="form-section">
+            <form class="cadastro-form">
+                <h2>Formulário de Cadastro</h2>
+                <p>Preencha seus dados</p>
+
+                <label for="nome">Nome completo*</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="estado">Estado*</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <!-- Adicionar mais opções aqui -->
+                </select>
+
+                <fieldset>
+                    <legend>Conhecimento de Programação*</legend>
+                    <label><input type="checkbox" name="conhecimento" value="HTML"> HTML</label>
+                    <label><input type="checkbox" name="conhecimento" value="CSS"> CSS</label>
+                    <label><input type="checkbox" name="conhecimento" value="JavaScript"> JavaScript</label>
+                    <label><input type="checkbox" name="conhecimento" value="PHP"> PHP</label>
+                    <label><input type="checkbox" name="conhecimento" value=".NET"> .NET</label>
+                    <label><input type="checkbox" name="conhecimento" value="Vue.js"> Vue.js</label>
+                    <label><input type="checkbox" name="conhecimento" value="React.js"> React.js</label>
+                    <label><input type="checkbox" name="conhecimento" value="React Native"> React Native</label>
+                    <label><input type="checkbox" name="conhecimento" value="Node"> Node</label>
+                    <label><input type="checkbox" name="conhecimento" value="Python"> Python</label>
+                    <label><input type="checkbox" name="conhecimento" value="Flutter"> Flutter</label>
+                    <label><input type="checkbox" name="conhecimento" value="Outras"> Outras</label>
+                </fieldset>
+
+                <label>Já trabalhou com desenvolvimento?</label>
+                <label><input type="radio" name="experiencia" value="Não" required> Não</label>
+                <label><input type="radio" name="experiencia" value="Sim" required> Sim</label>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+
+                <p class="nota">(*) Campos obrigatórios</p>
+                <p class="nota">Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em <a href="#">política de privacidade</a>.</p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
