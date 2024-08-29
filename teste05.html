@@ -7,21 +7,62 @@
     <link rel="stylesheet" href="estilos/teste05.css">
 </head>
 <body>
-    <h1>Teste de TAGS</h1>
-    <Main>
-        <h2>Corpo</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae atque incidunt laudantium esse numquam harum optio et omnis sit, doloremque ut molestias! Soluta inventore vitae neque voluptatum qui nisi hic.</p>
-
-
-    </Main>
-        
-    <section>secao</section>
-    <ul>
-        <li>AAAA</li>
-        <li>BBBB</li>
-        <li>CCCC</li>
-    </ul>
-    <img src="imagens/bannertop800.png" alt="">
-    <footer>rodapé</footer>
+    <fieldset class="parte1">
+        <h2>Formulário de cadastro</h2>
+            <p>Preencha seus dados</p>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <label for="nome"><p><img src="imagens/user.png" alt="usuario"><input type="text" name="name" id="nome" placeholder="Nome completo"></p></label>
+                    <p><img src="imagens/mail.png" alt="email"></p>
+                    <label for="e-mail"><input type="e-mail" name="e-mail" id="e-mail" placeholder="E-mail"> </label>
+                    <br>
+                        <select name="estado" id="estado">
+                            <option value="">Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+            </form>
+        </fieldset>
+        <fieldset>
+            <form class="form2">
+                    <p>Conhecimento de Programação*</p>
+                        <label><input type="checkbox" name="HTML" id="HTML"> HTML</label>
+                        <label><input type="checkbox" name="CSS" id="CSS"> CSS</label>
+                        <label><input type="checkbox" name="JavaScript" id> JavaScript</label>
+                        <label><input type="checkbox" name="PHP" id="PHP"> PHP</label>
+                        <label><input type="checkbox" name=".NET" id=".NET"> .NET</label>
+                        <label><input type="checkbox" name="VBA" id="VBA"> VBA</label>
+                        <label><input type="checkbox" name="React" id="React"> React</label>
+                        <label><input type="checkbox" name="ReactNative" id="ReactNative"> React Native</label>
+                        <label><input type="checkbox" name="Node" id="Node"> Node</label>
+                        <label><input type="checkbox" name="Phyton" id="Phyton"> Phyton</label>
+                        <label><input type="checkbox" name="Flutter" id="Flutter"> Flutter</label>
+                        <label><input type="checkbox" name="Outros" id="Outros"> Outros</label>
+            </form>
+        </fieldset>
 </body>
 </html>

@@ -26,8 +26,8 @@
     
     <img src="imagens/bannertopog.png" alt="Imagem de Cadastro">
     <div class="form-container">
-        <h2>Formulário de Cadastro</h2>
-        <form>
+        <h2 >Formulário de Cadastro</h2>
+        <form class="form1">
                 <p>
                     <label for="name"></label>
                     <input type="text" id="name" placeholder="Nome completo">
@@ -65,39 +65,43 @@
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                 </select>
+        </form>
             
                 <!-- Lista de estados brasileiros -->
             
 
            
-                <fieldset>
-                    <div class="programming-skills">
-                        <p>Conhecimento de Programação*</p>
-                        <div class="skills-options">
-                            <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
-                            <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
-                            <label><input type="checkbox" name="skills" value="JS"> JavaScript</label>
-                            <label><input type="checkbox" name="skills" value="PHP"> PHP</label>
-                            <label><input type="checkbox" name="skills" value=".NET"> .NET</label>
-                            <label><input type="checkbox" name="skills" value="VBA"> VBA</label>
-                            <label><input type="checkbox" name="skills" value="React"> React</label>
-                            <label><input type="checkbox" name="skills" value="ReactNative"> React Native</label>
-                            <label><input type="checkbox" name="skills" value="Node"> Node</label>
-                            <label><input type="checkbox" name="skills" value="Flutter"> Phyton</label>
-                            <label><input type="checkbox" name="skills" value="Flutter"> Flutter</label>
-                            <label><input type="checkbox" name="skills" value="Outros"> Outros</label>
-                        </div>
+    <fieldset>
+        <form class="form2">
+                <div class="programming-skills">
+                    <p>Conhecimento de Programação*</p>
+                    <div class="skills-options">
+                            <label><input type="checkbox" name="HTML" id="HTML"> HTML</label>
+                            <label><input type="checkbox" name="CSS" id="CSS"> CSS</label>
+                            <label><input type="checkbox" name="JavaScript" id> JavaScript</label>
+                            <label><input type="checkbox" name="PHP" id="PHP"> PHP</label>
+                            <label><input type="checkbox" name=".NET" id=".NET"> .NET</label>
+                            <label><input type="checkbox" name="VBA" id="VBA"> VBA</label>
+                            <label><input type="checkbox" name="React" id="React"> React</label>
+                            <label><input type="checkbox" name="ReactNative" id="ReactNative"> React Native</label>
+                            <label><input type="checkbox" name="Node" id="Node"> Node</label>
+                            <label><input type="checkbox" name="Phyton" id="Phyton"> Phyton</label>
+                            <label><input type="checkbox" name="Flutter" id="Flutter"> Flutter</label>
+                            <label><input type="checkbox" name="Outros" id="Outros"> Outros</label>
+                       
                     </div>
-                </fieldset>
+                </div>
+        </form>
+    </fieldset>
             
-
+        <form>
             <div class="development-radio">
                 <p>Já trabalhou com desenvolvimento?</p>
                 <label><input type="radio" name="dev" value="Sim"> Sim</label>
                 <label><input type="radio" name="dev" value="Não"> Não</label>
             </div>
 
-            <button type="submit">Enviar</button>
+            <input type="submit" value="Enviar">
         </form>
     </div>
 </div>

@@ -6,21 +6,45 @@
     padding: 0px;
 }
 body {
-    background-color: #0079BF;
-    color: white;
+    background-color: white;
+    color: #0079BF;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200vw;
     
 }
 
-main {
-    background-color: white;
-    color: black;
-    font-size: xx-large;
+fieldset{
+    width: 300px;
+    margin: 10px;
+    padding: 50px;
+    border: 0;
+}
+h2 {
+    color: rgba(0, 0, 0, 0.295);
     padding: 10px;
-    margin: 0px;
 }
 
-main > p {
-    background-color: white;
-    color: black;
+p {
+    color: #0079BF;
+    font-weight: bold;
+    padding: 10px;
+}
+
+form {
+    
+    
+}
+
+form.form2 {
+    background-color: #0079BF;
+    color: white;
+}
+
+form.form2 p {
+    color: white;
+    width: 270px;
+}
+
+label {
+    display: inline-block;
 }

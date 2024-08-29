@@ -62,15 +62,21 @@ nav ul li a.button {
     width: 50%;
     background-color: white;
     border-radius: 10px;
-    padding: 50px;
+    
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     margin-left: -100px;
+}
+
+form.form1 {
+    padding: 20px;
+    text-align: center;
 }
 
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #33333369;
+    
 }
 
 label {
@@ -89,12 +95,17 @@ select {
     border-radius: 5px;
 }
 
+form.form2 {
+    padding: -2px;
+}
 .programming-skills {
     margin-bottom: 15px;
+    color: white;
 }
 
 .programming-skills label {
     margin-right: 10px;
+    
 }
 
 .skills-options {
@@ -113,6 +124,7 @@ fieldset {
     background-color: #005a8d;
 }
 
+
 .development-radio {
     margin-bottom: 20px;
 }
@@ -121,7 +133,7 @@ fieldset {
     margin-right: 20px;
 }
 
-button {
+input[type="submit"] {
     padding: 10px 20px;
     background-color: #0079BF;
     color: white;
