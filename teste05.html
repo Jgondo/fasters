@@ -6,15 +6,17 @@
     <title>Teste05</title>
     <link rel="stylesheet" href="estilos/teste05.css">
 </head>
-<body>
-    <fieldset class="parte1">
+<body>>
         <h2>Formulário de cadastro</h2>
             <p>Preencha seus dados</p>
             <form action="cadastro.php" method="get" autocomplete="on">
-                <label for="nome"><p><img src="imagens/user.png" alt="usuario"><input type="text" name="name" id="nome" placeholder="Nome completo"></p></label>
-                    <p><img src="imagens/mail.png" alt="email"></p>
-                    <label for="e-mail"><input type="e-mail" name="e-mail" id="e-mail" placeholder="E-mail"> </label>
-                    <br>
+                <div>
+                    <label for="nome"></label>
+                <input type="text" name="name" id="nome" placeholder="Nome completo">
+            
+                <label for="e-mail"></label>
+                <input type="e-mail" name="e-mail" id="e-mail" placeholder="E-mail">
+                    
                         <select name="estado" id="estado">
                             <option value="">Estado</option>
                             <option value="AC">Acre</option>
@@ -45,24 +47,23 @@
                             <option value="SE">Sergipe</option>
                             <option value="TO">Tocantins</option>
                         </select>
-            </form>
-        </fieldset>
-        <fieldset>
-            <form class="form2">
+                </div>
+                
+
+
                     <p>Conhecimento de Programação*</p>
-                        <label><input type="checkbox" name="HTML" id="HTML"> HTML</label>
-                        <label><input type="checkbox" name="CSS" id="CSS"> CSS</label>
-                        <label><input type="checkbox" name="JavaScript" id> JavaScript</label>
-                        <label><input type="checkbox" name="PHP" id="PHP"> PHP</label>
-                        <label><input type="checkbox" name=".NET" id=".NET"> .NET</label>
-                        <label><input type="checkbox" name="VBA" id="VBA"> VBA</label>
-                        <label><input type="checkbox" name="React" id="React"> React</label>
-                        <label><input type="checkbox" name="ReactNative" id="ReactNative"> React Native</label>
-                        <label><input type="checkbox" name="Node" id="Node"> Node</label>
-                        <label><input type="checkbox" name="Phyton" id="Phyton"> Phyton</label>
-                        <label><input type="checkbox" name="Flutter" id="Flutter"> Flutter</label>
-                        <label><input type="checkbox" name="Outros" id="Outros"> Outros</label>
-            </form>
-        </fieldset>
+                    <label><input type="checkbox" name="HTML" id="HTML"> HTML</label>
+                    <label><input type="checkbox" name="CSS" id="CSS"> CSS</label>
+                    <label><input type="checkbox" name="JavaScript" id> JavaScript</label>
+                    <label><input type="checkbox" name="PHP" id="PHP"> PHP</label>
+                    <label><input type="checkbox" name=".NET" id=".NET"> .NET</label>
+                    <label><input type="checkbox" name="VBA" id="VBA"> VBA</label>
+                    <label><input type="checkbox" name="React" id="React"> React</label>
+                    <label><input type="checkbox" name="ReactNative" id="ReactNative"> React Native</label>
+                    <label><input type="checkbox" name="Node" id="Node"> Node</label>
+                    <label><input type="checkbox" name="Phyton" id="Phyton"> Phyton</label>
+                    <label><input type="checkbox" name="Flutter" id="Flutter"> Flutter</label>
+                    <label><input type="checkbox" name="Outros" id="Outros"> Outros</label>        
+            </form>     
 </body>
 </html>

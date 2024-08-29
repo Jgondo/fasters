@@ -12,39 +12,3 @@ body {
     max-width: 1200vw;
     
 }
-
-fieldset{
-    width: 300px;
-    margin: 10px;
-    padding: 50px;
-    border: 0;
-}
-h2 {
-    color: rgba(0, 0, 0, 0.295);
-    padding: 10px;
-}
-
-p {
-    color: #0079BF;
-    font-weight: bold;
-    padding: 10px;
-}
-
-form {
-    
-    
-}
-
-form.form2 {
-    background-color: #0079BF;
-    color: white;
-}
-
-form.form2 p {
-    color: white;
-    width: 270px;
-}
-
-label {
-    display: inline-block;
-}
