@@ -11,46 +11,46 @@
             <p>Preencha seus dados</p>
             <form action="cadastro.php" method="get" autocomplete="on">
                 <div>
-                    <label for="nome"></label>
-                <input type="text" name="name" id="nome" placeholder="Nome completo">
-            
-                <label for="e-mail"></label>
-                <input type="e-mail" name="e-mail" id="e-mail" placeholder="E-mail">
-                    
-                        <select name="estado" id="estado">
-                            <option value="">Estado</option>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                        </select>
+                    <label for="nome"><link rel="shortcut icon" href="imagens/" type="image/x-icon"></label>
+                    <input type="text" name="name" id="nome" placeholder="Nome completo">
                 </div>
-                
-
-
+                <div>
+                    <label for="e-mail"></label>
+                    <input type="e-mail" name="e-mail" id="e-mail" placeholder="E-mail">
+                </div>
+                <div>
+                    <select name="estado" id="estado">
+                        <option value="">Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div>
                     <p>Conhecimento de Programação*</p>
                     <label><input type="checkbox" name="HTML" id="HTML"> HTML</label>
                     <label><input type="checkbox" name="CSS" id="CSS"> CSS</label>
@@ -63,7 +63,27 @@
                     <label><input type="checkbox" name="Node" id="Node"> Node</label>
                     <label><input type="checkbox" name="Phyton" id="Phyton"> Phyton</label>
                     <label><input type="checkbox" name="Flutter" id="Flutter"> Flutter</label>
-                    <label><input type="checkbox" name="Outros" id="Outros"> Outros</label>        
+                    <label><input type="checkbox" name="Outros" id="Outros"> Outros</label>   
+                </div>
+                <div>
+                    <p>Já trabalhou com desenvolvimento?</p>
+                    
+                    <input type="radio" name="simnao" id="sim">
+                    <label for="sim">Sim</label>
+                    
+                    <input type="radio" name="simnao" id="nao">
+                    <label for="nao">Nao</label>
+                </div>
+                <div>
+                    (*) Campos obrigatórios
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>    
+                <div>
+                    <p>Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em política de privacidade.</p>
+                </div>    
             </form>     
-</body>
+    </body>
 </html>
