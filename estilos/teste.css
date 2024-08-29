@@ -65,7 +65,7 @@ nav ul li a.button {
     object-fit: cover;
 }
 
-.form-container {
+.form-container1 {
     width: 50%;
     background-color: white;
     color: #333;
@@ -73,6 +73,14 @@ nav ul li a.button {
     padding: 30px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     margin-left: -100px;
+}
+
+.form-container2 {
+    width: 100%vw;
+    background-color: red;
+    color: #333;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    
 }
 
 h2 {
@@ -112,14 +120,13 @@ select {
     margin-bottom: 10px;
     font-weight: bold;
     color: white;
-    background-color: #005a8d;
+    
 }
 
 .skills-options {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    background-color: #005a8d;
     color: white;  
 }
 
