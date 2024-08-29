@@ -28,60 +28,68 @@
     <div class="form-container">
         <h2>Formulário de Cadastro</h2>
         <form>
+                <p>
+                    <label for="name"></label>
+                    <input type="text" id="name" placeholder="Nome completo">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="E-mail">
+                </p>
+                
+                <select id="state" name="state">
+                        <option value="">Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                </select>
             
-            <input type="text" id="name" placeholder="Nome completo">
-
-            <input type="email" id="email" placeholder="E-mail">
-
-            <select id="state" name="state">
-                    <option value="">Estado</option>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-            </select>
                 <!-- Lista de estados brasileiros -->
             
 
-            <div class="programming-skills">
-                <p>Conhecimento de Programação*</p>
-                <div class="skills-options">
-                    <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
-                    <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
-                    <label><input type="checkbox" name="skills" value="JS"> JavaScript</label>
-                    <label><input type="checkbox" name="skills" value="PHP"> PHP</label>
-                    <label><input type="checkbox" name="skills" value=".NET"> .NET</label>
-                    <label><input type="checkbox" name="skills" value="VBA"> VBA</label>
-                    <label><input type="checkbox" name="skills" value="React"> React</label>
-                    <label><input type="checkbox" name="skills" value="ReactNative"> React Native</label>
-                    <label><input type="checkbox" name="skills" value="Node"> Node</label>
-                    <label><input type="checkbox" name="skills" value="Flutter"> Flutter</label>
-                    <label><input type="checkbox" name="skills" value="Outros"> Outros</label>
-                </div>
-            </div>
+           
+                <fieldset>
+                    <div class="programming-skills">
+                        <p>Conhecimento de Programação*</p>
+                        <div class="skills-options">
+                            <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                            <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                            <label><input type="checkbox" name="skills" value="JS"> JavaScript</label>
+                            <label><input type="checkbox" name="skills" value="PHP"> PHP</label>
+                            <label><input type="checkbox" name="skills" value=".NET"> .NET</label>
+                            <label><input type="checkbox" name="skills" value="VBA"> VBA</label>
+                            <label><input type="checkbox" name="skills" value="React"> React</label>
+                            <label><input type="checkbox" name="skills" value="ReactNative"> React Native</label>
+                            <label><input type="checkbox" name="skills" value="Node"> Node</label>
+                            <label><input type="checkbox" name="skills" value="Flutter"> Phyton</label>
+                            <label><input type="checkbox" name="skills" value="Flutter"> Flutter</label>
+                            <label><input type="checkbox" name="skills" value="Outros"> Outros</label>
+                        </div>
+                    </div>
+                </fieldset>
+            
 
             <div class="development-radio">
                 <p>Já trabalhou com desenvolvimento?</p>
