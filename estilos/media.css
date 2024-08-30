@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+nav::after {
+    content: "";
+    position: absolute;
+    left: 73%;
+    top: 11%;
+    transform: translateX(-75%);
+    width: 87%;
+    height: 2px; /* Ajuste a altura da linha conforme necessário */
+    background: linear-gradient(to right, transparent, white, transparent);
+}
+/* Media Queries para telas menores */
+@media (max-width: 1200px) {
+    header, .bottom-section, .problem-section, .journey-section, .objectives-section, footer {
+        padding: 20px;
+    }
+
+    .form-container {
+        margin: auto;
+    }
+
+    .problem-image {
+        padding: 20px;
+    }
+
+    .bottom-text, .text {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header, .bottom-section, .problem-section, .journey-section, .objectives-section, footer {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .form-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .problem-image, .text, .bottom-text, .objective-card, .journey-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .cards, .objective-cards, .journey-cards {
+        flex-direction: column;
+    }
+
+    .journey-card {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-contact {
+        border-left: none;
+        padding-left: 0;
+    }
+}

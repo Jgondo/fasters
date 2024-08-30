@@ -7,61 +7,59 @@
 }
 
 body {
-    background-color: #1A7FBD;
+    background-color: black;
     font-family: Arial, sans-serif;
     color: #333;
     max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    
 }
 
 /* header */
 header {
-    background-color: #1A7FBD;
+    background-color: #bd5b1a;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px
+    
 }
 
 .logo img {
-    height: 50px;
+    height: 40px;
+  
 }
-/* Linha de separação */
-nav::after {
-    content: "";
-    position: absolute;
-    top:11%;
-    left: 72%;
-    transform: translateX(-75%);
-    width: 87%;
-    height: 2px; /* Ajuste a altura da linha conforme necessário */
-    background: linear-gradient(to right, transparent, white, transparent);
-}
-
 nav {
-    display: flex;
-    justify-content: space-between;
+    background-color: chartreuse;
     align-items: center;
-    width: 100%;
-    max-width: 800px;
-    margin-left: auto;
 }
-
 nav ul {
     list-style-type: none;
-    display: flex;
-    gap: 20px;
+    
 }
 
 nav ul li {
     display: inline-block;
+    margin-left: 50px;
+    gap: 15px;
+    position: relative;
+    right: 35px;
+    top: 0px;
+    
 }
 
 nav ul li a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
+    text-align: center;
     color: white;
-    font-size: 18px;
+    border-top: 2px solid black;
+    
+}
+
+nav > ul > li > a:hover {
+    background-color: rgba(214, 10, 10, 0.096);
 }
 
 nav ul li a.button {
@@ -71,54 +69,34 @@ nav ul li a.button {
 }
 
 nav ul li a.button:hover {
-    background-color: #000;
+    background-color: rgba(214, 10, 10, 0.096);
 }
 
-
-
-/* main */
-
-.main-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    background-color: #1A7FBD;
-}
-
-.image-container {
-    flex: 1;
-    min-width: 300px;
-    margin: 10px;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+/* form */
+form {
+    background-color: chartreuse;
+    margin-top: 0;
+    padding: 10px;
 }
 
 .form-container {
-    flex: 0.3;
+    width: 20vw;
     min-width: 300px;
-    max-width: 400px; /* Define uma largura máxima para o formulário */
-    padding: 20px; /* Reduz o padding para tornar o formulário menos alto */
+    padding: 30px;
     background-color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     color: #333;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+   
 }
 
 .form-container p {
     text-align: left;
     padding: 10px;
+    
 }
 
-h2 {
+h2 {   /* titulo do form*/
     font-size: 24px;
     margin-bottom: 15px;
     color: rgba(128, 128, 128, 0.5);
@@ -135,11 +113,13 @@ label {
     display: block;
     margin-bottom: 5px;
     color: #005a8d;
+    
 }
 
 .input-container {
     position: relative;
     margin-bottom: 10px;
+
 }
 
 .input-container .icon {
@@ -152,10 +132,11 @@ label {
 .input-container input,
 .input-container select {
     width: 100%;
-    padding: 8px 40px; /* Reduz o padding interno para diminuir a altura dos campos */
+    padding: 10px 40px;
     border: 1px solid rgba(128, 128, 128, 0.171);
     border-radius: 5px;
     color: #005a8d;
+   
 }
 
 .programming-skills {
@@ -169,6 +150,7 @@ label {
     font-weight: bold;
     color: white;
     text-align: left;
+    
 }
 
 .skills-options {
@@ -176,7 +158,7 @@ label {
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
-    color: #005a8d;
+    color: #005a8d;  
 }
 
 label.options {
@@ -188,29 +170,33 @@ label.options {
 
 .development-radio p {
     margin-bottom: 5px;
-    font-weight: bold;
-    text-align: left;
+    font-weight: bold;  
+    
 }
 
 .development-radio label {
     display: inline-block;
     padding: 10px;
+    position: relative
 }
 
 .campo-obrigatorio {
-    padding-bottom: 20px; /* Reduz o padding inferior para tornar o formulário mais compacto */
+    padding-bottom: 30px;
+    
 }
 
 .campo-obrigatorio p {
     text-align: center;
+    
 }
 
 .divider {
+    transform: translateX(12%);
     width: 80%;
     height: 1px;
     background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.432), left transparent);
-    margin: auto;
 }
+
 
 button {
     width: 100%;
@@ -231,15 +217,43 @@ button:hover {
 .rodapé-form {
     font-size: 8px;
     color: #5555558c;
+    
 }
 
 .rodapé-form p {
     text-align: center;
+   
 }
-
 .rodapé-form p > span {
     color: black;
     font-weight: bolder;
+   
+}
+/* main */
+
+main {
+    width: 90vw;
+    background-color: #bd1ab5;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+.main-container {
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: blueviolet;
+    background-image: url("../imagens/bannertop800.png");  
+}
+
+article h2 {
+    padding-bottom: 20px;
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 20px;
 }
 
 .bottom-section {
@@ -247,9 +261,9 @@ button:hover {
     margin: 0;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 20px 40px 15px 150px; 
     display: flex;
-    background-color: #0079BF;
+    background-color: #bf0000;   
 }
 
 .bottom-image {
@@ -279,6 +293,7 @@ button:hover {
 }
 
 .problem-section {
+    background-color: darkorange;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -299,7 +314,6 @@ button:hover {
 .text {
     flex: 1;
     font-size: 10px;
-    margin: 20px;
 }
 
 .text h2 {
@@ -308,6 +322,7 @@ button:hover {
     position: relative;
     display: inline-block;
     padding: 0 20px;
+    color: #555555c4;
 }
 
 .text p {
@@ -316,6 +331,7 @@ button:hover {
     text-align: justify;
     margin-top: -10px;
     color: white;
+    margin-bottom: 20px;
 }
 
 .cards {
@@ -323,6 +339,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 0;
+    background-color: darkolivegreen;
 }
 
 .card {
@@ -348,7 +365,7 @@ button:hover {
 .journey-section {
     width: 100%;
     text-align: center;
-    background-color: white;
+    background-color: rgb(230, 5, 5);
     margin: 0px;
     padding: 100px 50px;
 }
@@ -386,10 +403,11 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 40px;
+    background-color: blueviolet;
 }
 
 .journey-card {
-    background-color: #007BFF;
+    background-color: #3cff00;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -418,6 +436,7 @@ button:hover {
 .cta-section {
     text-align: center;
     margin: 40px 0;
+    background-color: #00ffc8;
 }
 
 .cta-button {
@@ -454,7 +473,7 @@ button:hover {
 
 /* objectives */
 .objectives-section {
-    background-color: #007BFF;
+    background-color: #e5ff00;
     color: white;
     padding: 50px;
     text-align: center;
@@ -471,6 +490,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: antiquewhite;
 }
 
 .objective-card {
@@ -541,6 +561,7 @@ footer {
 .footer-links, .footer-contact {
     text-align: center;
     flex: 1;
+    color: white;
 }
 
 .footer-links {
@@ -557,75 +578,12 @@ footer {
 .footer-contact {
     border-left: 2px solid #fff;
     padding-left: 20px;
+    color: white;
+
 }
 
-/* Media Queries para telas menores */
-@media (max-width: 1200px) {
-    header, .bottom-section, .problem-section, .journey-section, .objectives-section, footer {
-        padding: 20px;
-    }
-
-    .form-container {
-        margin: auto;
-    }
-
-    .problem-image {
-        padding: 20px;
-    }
-
-    .bottom-text, .text {
-        margin: 20px 0;
-    }
+.footer-contact p {
+    color: white;
+    
 }
 
-@media (max-width: 768px) {
-    header, .bottom-section, .problem-section, .journey-section, .objectives-section, footer {
-        padding: 10px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul li {
-        display: block;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-
-    .form-container {
-        width: 100%;
-        margin: auto;
-    }
-
-    .problem-image, .text, .bottom-text, .objective-card, .journey-card {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .cards, .objective-cards, .journey-cards {
-        flex-direction: column;
-    }
-
-    .journey-card {
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    .footer-contact {
-        border-left: none;
-        padding-left: 0;
-    }
-}
