@@ -1,82 +1,124 @@
 @charset "UTF-8";
 
-nav::after {
-    content: "";
-    position: absolute;
-    left: 73%;
-    top: 11%;
-    transform: translateX(-75%);
-    width: 87%;
-    height: 2px; /* Ajuste a altura da linha conforme necessário */
-    background: linear-gradient(to right, transparent, white, transparent);
-}
-/* Media Queries para telas menores */
-@media (max-width: 1200px) {
-    header, .bottom-section, .problem-section, .journey-section, .objectives-section, footer {
-        padding: 20px;
-    }
+/* Responsividade */
 
-    .form-container {
-        margin: auto;
-    }
-
-    .problem-image {
-        padding: 20px;
-    }
-
-    .bottom-text, .text {
-        margin: 20px 0;
-    }
-}
-
-@media (max-width: 768px) {
-    header, .bottom-section, .problem-section, .journey-section, .objectives-section, footer {
-        padding: 10px;
-    }
-
-    nav {
+/* Telas até 600px */
+@media (max-width: 600px) {
+    .main-container {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        padding: 10px; /* Ajuste do padding para telas pequenas */
     }
 
     nav ul {
+        display: none;
         flex-direction: column;
-        gap: 10px;
+    }
+    nav::after {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
     }
 
-    nav ul li {
-        display: block;
+    .form-container {
+        width: 90%;
     }
 
-    nav ul li a {
-        font-size: 16px;
+    .bottom-section, .problem-section, .journey-section, .objectives-section {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .bottom-image, .problem-image {
+        margin-bottom: 20px;
+    }
+
+    .bottom-section img, .problem-section img {
+        width: 90%; /* Ajusta a imagem ao tamanho do contêiner */
+        height: auto;
+    }
+
+    .text, .bottom-text {
+        text-align: center; /* Centraliza o texto em telas pequenas */
+        font-size: 16px; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+}
+
+/* Telas até 768px (Celular) */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 10px; /* Ajuste do padding para telas pequenas */
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
     }
 
     .form-container {
         width: 100%;
-        margin: auto;
     }
 
-    .problem-image, .text, .bottom-text, .objective-card, .journey-card {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .cards, .objective-cards, .journey-cards {
+    .bottom-section, .problem-section, .journey-section, .objectives-section {
         flex-direction: column;
+        padding: 10px;
+        text-align: center;
     }
 
-    .journey-card {
-        width: 100%;
+    .bottom-image, .problem-image {
+        margin-bottom: 20px;
     }
 
-    footer {
-        flex-direction: column;
+    .bottom-section img, .problem-section img {
+        width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+        height: auto;
     }
 
-    .footer-contact {
-        border-left: none;
-        padding-left: 0;
+    .text, .bottom-text {
+        text-align: center; /* Centraliza o texto em telas pequenas */
+        font-size: 16px; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+}
+
+/* Telas até 992px (Tablet) */
+@media (max-width: 992px) {
+    nav ul {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+
+    .bottom-section, .problem-section, .journey-section, .objectives-section {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .bottom-text, .text {
+        text-align: justify; /* Ajuste do texto para justificar em telas maiores */
+    }
+}
+
+/* Telas até 1200px (Desktop) */
+@media (max-width: 1200px) {
+    .form-container {
+        width: 70%;
+    }
+}
+
+/* Telas acima de 1200px */
+@media (min-width: 1201px) {
+    .form-container {
+        width: 50%;
     }
 }
